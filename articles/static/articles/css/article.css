@@ -1,0 +1,180 @@
+/* Общие настройки страниц */
+
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+
+.header {
+    width: 960px;
+    max-width: calc(100% - 40px);
+
+    margin: 30px auto 40px;
+    position: relative;
+}
+
+/* Логотип по центру */
+
+.header img {
+    display: block;
+    width: 318px;
+    max-width: 75%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ссылка "Все записи" */
+
+.all-posts {
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* Основной блок архива */
+
+.archive > .archive {
+    width: 960px;
+    max-width: calc(100% - 40px);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Основной блок отдельной статьи */
+
+.article-content {
+    width: 960px;
+    max-width: calc(100% - 40px);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Блок одной записи */
+
+.one-post {
+    margin-bottom: 45px;
+}
+
+/* Названия статей */
+
+.post-title {
+    font-size: 26px;
+    font-weight: bold;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Ссылки в заголовках */
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.post-title a:hover {
+    color: #e0f7f3;
+}
+
+/* Информация об авторе и дате */
+
+.article-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Автор слева */
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+/* Дата справа */
+
+.article-created-date {
+    text-align: right;
+}
+
+/* Очистка обтекания */
+
+.article-info::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Текст статьи */
+
+.article-text {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Отступы между абзацами */
+
+.article-text p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Стили отдельной страницы */
+
+.article .post-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.article .article-text {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Адаптация для небольших экранов */
+
+@media (max-width: 600px) {
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .all-posts {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .post-title {
+        font-size: 22px;
+    }
+
+    .article .post-title {
+        font-size: 25px;
+    }
+
+    .article-author {
+        width: 100%;
+        float: none;
+    }
+
+    .article-created-date {
+        text-align: left;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ post.title }}</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'articles/css/article.css' %}"
+    >
+</head>
+
+<body class="article">
+
+    <div class="header">
+
+        <img
+            src="{% static 'articles/logo.svg' %}"
+            alt="Логотип блога"
+        >
+
+        <a class="all-posts" href="{% url 'archive' %}">
+            Все записи
+        </a>
+
+    </div>
+
+    <div class="article-content">
+
+        <h1 class="post-title">
+            {{ post.title }}
+        </h1>
+
+        <div class="article-info">
+
+            <div class="article-author">
+                Автор: {{ post.author.username }}
+            </div>
+
+            <div class="article-created-date">
+                {{ post.created_date|date:"d.m.Y" }}
+            </div>
+
+        </div>
+
+        <div class="article-text">
+            {{ post.text|linebreaks }}
+        </div>
+
+    </div>
+
+</body>
+</html>

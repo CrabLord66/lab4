@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Виртуальное окружение
+venv/
+.venv/
+env/
+
+# База данных
+db.sqlite3
+db.sqlite3-journal
+
+# Секретные данные
+.env
+.env.*
+!.env.example
+
+# Настройки редакторов
+.vscode/
+.idea/
+
+# Временные файлы
+*.log
+.DS_Store
+Thumbs.db
+
+# Статические файлы после сборки
+staticfiles/

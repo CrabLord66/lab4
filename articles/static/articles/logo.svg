@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="318"
+     height="80"
+     viewBox="0 0 318 80">
+
+    <!-- Темно-зеленая плашка -->
+    <rect
+        x="10"
+        y="15"
+        width="298"
+        height="50"
+        rx="6"
+        fill="#23796e"
+        stroke="#176156"
+        stroke-width="2"
+    />
+
+    <!-- Название блога -->
+    <text
+        x="159"
+        y="48"
+        font-family="Arial, sans-serif"
+        font-size="25"
+        font-weight="bold"
+        text-anchor="middle"
+        fill="#ffffff">
+        Django Public Blog
+    </text>
+
+</svg>
